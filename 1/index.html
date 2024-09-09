@@ -1,0 +1,49 @@
+<head>
+    <meta name="author" content="Raúl Caro Pastorino" />
+    <!-- dice el nombre de la persona que ha creado la pagina-->
+
+    <script>
+        function viajarConSuerte() {
+            /* Función que dice a que pagina lo va a dirigir*/
+            
+            var x = Math.random() * 10;
+            /* Genera un número entre 0 y 10 y lo guarda en  la variables x */
+
+            var URL;
+            /* Crea una variable llamada URL */
+
+            if (x <= 3) {
+                /* condicional para saber si x es menor o igual a 3 */
+                x = 0;
+                /* Cambia el valor de x a 0 */
+                URL = 'https://www.hotmail.com';
+                /* Asigna la dirección de Hotmail mediante una URL */
+            } else if (x <= 6) {
+                /* condicional para saber Si x es mayor que 3 pero menor o igual a 6 */
+                x = 1;
+                /* Cambia el valor de x a 1 */
+                URL = 'https://www.gmail.com';
+                /* Asigna la dirección de Gmail a mediante una URL */
+            } else {
+                /* excpecion Si x es mayor que 6 */
+                x = 2;
+                /* Cambia el valor de x a 2 */
+                URL = 'https://www.yahoo.com';
+                /* Asigna la dirección de Yahoo mediante una 'URL' */
+            }
+
+            location.assign(URL);
+            /* dirige al usuario a la página que está asignado URL */
+        }
+    </script>
+    <!-- define una función la cual lo dirige a una página web ya establecida anteriormente (Hotmail, Gmail, Yahoo) -->
+</head>
+
+<body>
+    <h1 id="titulo1">URL Aleatoria</h1>
+    <!-- Muestra el título "URL Aleatoria" en la página -->
+
+    <div>
+        <a href="javascript:viajarConSuerte();" title="Viajando con suerte">Pulsa aqui para viajar con suerte</a>
+    </div>
+</body>

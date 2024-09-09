@@ -1,0 +1,30 @@
+#cajaSlide {
+    display: block;/* Hace que el contenedor ocupe toda la línea horizontalmente */
+    
+
+    margin: 0;/* Elimina los márgenes alrededor del contenedor */
+    
+
+    width: 100%;/* Ajusta el contenedor para que ocupe el 100% del ancho disponible */
+    
+
+    text-align: center;/* Centra el contenido dentro del contenedor*/
+    
+}
+
+#cajaSlide IMG {
+    max-width: 800px;/* Establece un máximo ancho de 800 píxeles para la imagen */
+    
+
+    border: 10px solid black;/* Aplica un borde de 10 píxeles de grosor, sólido y negro a la imagen */
+    
+
+    border-radius: 20px;/* hace que la imagen obtenga una forma redonda de 20px */
+    
+
+    box-shadow: 10px 10px 10px black;/* Añade una sombra negra alrededor de la imagen */
+    
+
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre la imagen */
+    
+}

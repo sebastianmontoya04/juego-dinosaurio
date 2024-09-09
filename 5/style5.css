@@ -1,0 +1,16 @@
+.circulo {
+    /* Define un ancho de 100 píxeles para el círculo. */
+    width: 100px;
+    
+    /* Define una altura de 100 píxeles para el círculo. */
+    height: 100px;
+    
+    /* Hace que el elemento sea un círculo al redondear sus bordes. */
+    border-radius: 50%;
+    
+    /* Añade un margen de 10 píxeles alrededor del círculo. */
+    margin: 10px;
+    
+    /* Hace que los círculos se alineen horizontalmente uno al lado del otro. */
+    display: inline-block;
+}

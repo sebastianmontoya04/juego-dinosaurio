@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Define el conjunto de caracteres como UTF-8 -->
+
+    <link rel="stylesheet" href="/juego-dinosaurio/2/style2.css">
+    <!-- Enlaza el archivo de estilos-->
+</head>
+<body onload="iniciar();">
+    <!-- Ejecuta la función nombrada iniciar cuando la página se cargue -->
+
+    <h1 id="titulo1">Pase de Imágenes automático</h1>
+    <!-- Muestra el título" -->
+
+    <div id="cajaSlide">
+        <!-- Contenedor en la cual va la imagen del pase automático -->
+
+        <img id="imgSlide" src="../images/img1.jpg" title="Imagen" alt="Imagen" onclick="rotarImagenes();" />
+        <!-- Muestra una imagen y al hacer clic, se ejecuta la función 'rotarImagenes()' -->
+    </div>
+
+    <br /><br />
+
+    <form>
+        <!-- Formulario-->
+        <input type="button" value="Parar" onclick="clearInterval(temporizador);" />
+        <!-- Botón el cual tiene la funcion de detener el pase automático de imágenes -->
+
+        <input type="button" value="Continuar" onclick="iniciar();" />
+        <!-- Botón para reiniciar el pase automático -->
+    </form>
+
+    <script src="/juego-dinosaurio/2/main2.js"></script>
+    <!-- Enlaza el archivo de JavaScript -->
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define el conjunto de caracteres como UTF-8 -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura que la página se ajuste correctamente en diferentes dispositivos aplicando un responsive -->
+    
+    <title>A Calcular</title>
+    <!-- Título de navegacion-->
+</head>
+
+<body>
+    <h1>A Calcular</h1>
+    <!-- Título principal -->
+
+    
+    <input type="number" id="num1" placeholder="Número 1" /><!-- Campo para que el usuario ingrese un numero -->
+
+    
+    <select id="operacion">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <!-- Menú  para seleccionar la operación matemática -->
+    
+    <!-- Campo para que el usuario ingrese un segundo número -->
+    <input type="number" id="num2" placeholder="Número 2" />
+    
+    
+    <button onclick="calcular()">Calcular</button><!-- Botón que sirve para realizar el cálculo cuando hace click -->
+    
+    
+    <p id="resultado"></p><!-- aqui es donde se mostrará el resultado del cálculo -->
+
+    <script src="/juego-dinosaurio/4/main4.js"></script>
+    <!-- Enlaza el archivo JavaScript-->
+</body>
+
+</html>
